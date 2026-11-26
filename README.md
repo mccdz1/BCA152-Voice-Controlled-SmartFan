@@ -6,8 +6,6 @@ This project transforms a conventional 3-speed desk/standing fan into an intelli
 
 ---
 
-## 🌟 Key Features
-
 * **4 Discrete Fan Operating Modes:**
   * **STOP / OFF (0%):** All speed relays de-energized.
   * **LOW Speed (33%):** Relay 1 (K1) energized.
@@ -27,7 +25,7 @@ This project transforms a conventional 3-speed desk/standing fan into an intelli
 
 ---
 
-## 🛠️ Hardware Requirements (Direct Setup)
+Hardware Requirements (Direct Setup)
 
 | Qty | Component | Specification / Description | Purpose in Lab |
 | :---: | :--- | :--- | :--- |
@@ -40,7 +38,7 @@ This project transforms a conventional 3-speed desk/standing fan into an intelli
 
 ---
 
-## 📌 Pin Configuration & Direct Wiring
+Pin Configuration & Direct Wiring
 
 ### 1. ESP32-S3 Pin Mapping Table
 
