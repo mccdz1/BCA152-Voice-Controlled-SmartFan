@@ -184,13 +184,16 @@ void setup() {
   pinMode(APP_BTN2, INPUT_PULLUP);
   pinMode(APP_BTN3, INPUT_PULLUP);
 
-  // Initialize Level Shifter Enable & Relay GPIOs as outputs
-  pinMode(APP_OE, OUTPUT);
+  // Initialize Relay GPIOs as OFF before OUTPUT to prevent boot clicks
+  digitalWrite(APP_RELAY1, RELAY_OFF);
+  digitalWrite(APP_RELAY2, RELAY_OFF);
+  digitalWrite(APP_RELAY3, RELAY_OFF);
   pinMode(APP_RELAY1, OUTPUT);
   pinMode(APP_RELAY2, OUTPUT);
   pinMode(APP_RELAY3, OUTPUT);
 
-  // Enable TXS0108E Port B outputs (set OE high)
+  // Optional: Level Shifter Enable (ignored if wired directly)
+  pinMode(APP_OE, OUTPUT);
   digitalWrite(APP_OE, HIGH);
   apphw_set_state(0);
 
