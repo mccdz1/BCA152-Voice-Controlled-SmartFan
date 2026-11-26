@@ -6,8 +6,6 @@ This project transforms a conventional 3-speed desk/standing fan into an intelli
 
 ---
 
-## 🌟 Key Features
-
 * **4 Discrete Fan Operating Modes:**
   * **STOP / OFF (0%):** All speed relays de-energized.
   * **LOW Speed (33%):** Relay 1 (K1) energized.
@@ -22,8 +20,7 @@ This project transforms a conventional 3-speed desk/standing fan into an intelli
 * **ESP32-S3 Safe Pin Mapping:** Specifically designed for the **ESP32-S3 N16R8** development board, carefully avoiding the internally reserved Octal PSRAM and SPI Flash pins (`GPIO 26–37`).
 
 ---
-
-## 🛠️ Hardware Requirements
+Hardware Requirements
 
 | Qty | Component | Specification / Description | Purpose in Lab |
 | :---: | :--- | :--- | :--- |
@@ -38,7 +35,7 @@ This project transforms a conventional 3-speed desk/standing fan into an intelli
 
 ---
 
-## 📌 Pin Configuration & Wiring
+Pin Configuration & Wiring
 
 ### 1. ESP32-S3 Pin Mapping Table
 
@@ -55,7 +52,7 @@ This project transforms a conventional 3-speed desk/standing fan into an intelli
 
 ---
 
-### 2. SunFounder 4-Channel Relay Header Pinout
+4-Channel Relay Header Pinout
 
 ```text
 [JD-VCC / VCC Jumper] ────► Keep Green Jumper Cap ON (bridges JD-VCC and VCC)
